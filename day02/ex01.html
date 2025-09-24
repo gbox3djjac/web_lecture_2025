@@ -13,6 +13,7 @@
     <script>
         var counterOutput = document.getElementById("counter-output")
         var btnInc = document.getElementById("btn-inc");
+        var btnDec = document.getElementById("btn-dec");
         var counter = 0 //변수 선언
 
         btnInc.addEventListener('click',()=> {
@@ -21,6 +22,11 @@
             counterOutput.innerText = "counter : " + counter
 
         })
+        btnDec.addEventListener('click',()=> {
+            counter = counter -1
+            counterOutput.innerText = "counter : " + counter
+        })
+        
 
 
     </script>
